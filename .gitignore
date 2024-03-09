@@ -1,0 +1,4 @@
+# 项目排除路径
+/haut-action/target/
+/haut-common/target/
+/haut_attendance/target/

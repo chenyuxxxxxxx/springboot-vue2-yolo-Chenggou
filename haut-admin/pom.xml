@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+        <parent>
+            <artifactId>haut</artifactId>
+            <groupId>com.haut</groupId>
+            <version>1.0-SNAPSHOT</version>
+            <relativePath>../haut</relativePath>
+        </parent>
+    <artifactId>haut_admin</artifactId>
+
+<!--    <name>admin</name>-->
+    <properties>
+        <java.version>8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!--接口文档生成-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.haut</groupId>
+            <artifactId>haut-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 在 pom.xml 中添加 WebSocket 依赖 -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-websocket</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.haut</groupId>
+            <artifactId>haut-action</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.haut</groupId>
+            <artifactId>haut_attendance</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!-- 只能在开发环境中使用 -->
+<!--        <dependency>-->
+<!--            <groupId>org.bgee.log4jdbc-log4j2</groupId>-->
+<!--            <artifactId>log4jdbc-log4j2-jdbc4</artifactId>-->
+<!--            <version>1.16</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+
+</project>
